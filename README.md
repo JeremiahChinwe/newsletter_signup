@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [See Solution here](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Solution URL: [See Solution here](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv/hub)
+- Live Site URL: [Vercel](https://newsletter-signup-ashen-delta.vercel.app/)
 
 ## My process
 
