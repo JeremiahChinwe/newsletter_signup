@@ -139,6 +139,7 @@ p {
   margin: 29px 0;
   padding: 1rem;
   background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
   width: 90%;
   border: none;
   display: block;
