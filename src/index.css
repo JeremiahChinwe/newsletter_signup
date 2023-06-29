@@ -54,7 +54,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 0;
+  padding: 0;
 }
 
 .box {
@@ -219,6 +219,10 @@ footer .attribution {
 /* ----------------------- Media Query ------------------------------- */
 
 @media screen and (min-width: 800px) {
+  .container {
+    padding: 24px 0;
+  }
+
   .box {
     display: flex;
     flex-direction: row-reverse;
