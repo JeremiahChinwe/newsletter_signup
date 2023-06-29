@@ -32,48 +32,50 @@ export default function Hero() {
 
 
     return (
-        <main className="main_section">
-            <div className="box">
-                <div className="images">
-                    <img src={mobile} alt="illustration icon" className="mobile-img" />
-                    <img src={desktop} alt="illustration icon" className="desktop-img" />
-                </div>
-                <div className="sign_up">
-                    <h1>Stay updated!</h1>
-                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-                    <p><img src={iconList} alt="checkmark icon" /> Product discovery and building what matters</p>
-                    <p><img src={iconList} alt="checkmark icon" /> Measuring to ensure updates are a success</p>
-                    <p><img src={iconList} alt="checkmark icon" /> And much more!</p>
+        <section className="main_section">
+            <div className="container">
+                <div className="box">
+                    <div className="images">
+                        <img src={mobile} alt="illustration icon" className="mobile-img" />
+                        <img src={desktop} alt="illustration icon" className="desktop-img" />
+                    </div>
+                    <div className="sign_up">
+                        <h1>Stay updated!</h1>
+                        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                        <p><img src={iconList} alt="checkmark icon" /> Product discovery and building what matters</p>
+                        <p><img src={iconList} alt="checkmark icon" /> Measuring to ensure updates are a success</p>
+                        <p><img src={iconList} alt="checkmark icon" /> And much more!</p>
 
-                    <form onSubmit={handleSubmit}>
-                        <div className="form_details">
+                        <form onSubmit={handleSubmit}>
+                            <div className="form_details">
 
-                            <label htmlFor="email">Email address
-                                <span>{input && <span
-                                    className={`${message === "Valid email required" ? "invalid_email" : message === "Correct Email 👍" ? "valid_email" : ""} }`}
-                                >
-                                    {message}
-                                </span>
-                                }</span>
-                            </label>
+                                <label htmlFor="email">Email address
+                                    <span>{input && <span
+                                        className={`${message === "Valid email required" ? "invalid_email" : message === "Correct Email 👍" ? "valid_email" : ""} }`}
+                                    >
+                                        {message}
+                                    </span>
+                                    }</span>
+                                </label>
 
-                            <input
-                                type="email"
-                                id="email"
-                                value={input}
-                                onChange={handleChange}
-                                placeholder="email@company.com"
-                                className={`${input && message === "Valid email required" ? "wrong_input" : ""}`}
-                                required
-                            />
-                            {input && <span>{message === "Correct Email 👍" ? "" : "Example: johndeo@gamil.com"}</span>}
-                            <button>Subscribe to monthly newsletter</button>
-                        </div>
-
-                    </form>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    value={input}
+                                    onChange={handleChange}
+                                    placeholder="email@company.com"
+                                    className={`${input && message === "Valid email required" ? "wrong_input" : ""}`}
+                                    required
+                                    autoFocus
+                                />
+                                {input && <span>{message === "Correct Email 👍" ? "" : "Example: johndeo@gamil.com"}</span>}
+                                <button>Subscribe to monthly newsletter</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </main>
+        </section>
 
     )
 }

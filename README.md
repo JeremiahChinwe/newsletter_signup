@@ -11,10 +11,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -34,5 +31,28 @@ Users should be able to:
 
 ### Screenshots
 
-![Mobile View](./src/solution/sign-up-mobile.pn)
+![Mobile View](./src/solution/sign-up-mobile.png)
 ![Desktop View](./src/solution/sign-up-desktop.png)
+
+### Links
+
+- Solution URL: [See Solution here](https://your-solution-url.com)
+- Live Site URL: [Vercel](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semactic HTML5 markup
+- Flexbox
+- [React](https://reactjs.org/) - JS library
+- Mobile-first workflow
+
+### What I learned
+
+Building this project, I learned that Flexbox is more handy and works better for me than Grid.
+
+## Author
+
+- Frontend Mentor - [@JeremiahChinwe](https://www.frontendmentor.io/profile/JeremiahChinwe)
+- Twitter - [@jeremiahchinwe](https://www.twitter.com/jeremiahchinwe)

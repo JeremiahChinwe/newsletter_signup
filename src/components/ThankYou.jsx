@@ -10,15 +10,19 @@ export default function ThankYou() {
 
   return (
     <section className='thank-you-page'>
-      <div className="details">
-        <div>
-          <img src={iconList} alt="checkmark icon" />
-          <h1>Thanks for subscribing!</h1>
-          <p>A confirmation email has been sent to <span className="email">{input}</span>.
-            Please open it and click the button inside to confirm your subscription.
-          </p>
+      <div className="container">
+        <div className="content">
+          <div>
+            <img src={iconList} alt="checkmark icon" />
+            <h1>Thanks for subscribing!</h1>
+            <p>A confirmation email has been sent to <span className="email">{input}</span>.
+              Please open it and click the button inside to confirm your subscription.
+            </p>
+          </div>
+          <div className="link-to-home">
+            <a href="/">Dismiss message</a>
+          </div>
         </div>
-        <Link to="/">Dismiss message</Link>
       </div>
     </section>
   )

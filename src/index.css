@@ -26,15 +26,10 @@ a:hover {
 
 body {
   margin: 0;
-  padding: 12px 12px 0 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 320px;
+  padding: 0;
+  width: 100%;
   min-height: 100vh;
-  background-color: hsl(234, 29%, 20%);
-  ;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -49,20 +44,26 @@ p {
 
 /* ------------------- Sign Up Page ------------------------------ */
 .main_section {
-  width: fit-content;
-  background-color: hsl(0, 0%, 100%);
-  margin: 16px auto;
+  background-color: hsl(235, 18%, 26%);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
 }
 
 .box {
-  width: fit-content;
+  width: 375px;
   height: fit-content;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .box .mobile-img {
-  display: flex;
-  flex-wrap: wrap;
-  flex-shrink: 1;
   width: 100%;
 }
 
@@ -141,6 +142,8 @@ p {
   width: 90%;
   border: none;
   display: block;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .sign_up form button:hover {
@@ -150,67 +153,62 @@ p {
 
 /* -------------------- Thank you Page ------------------------------- */
 .thank-you-page {
-  min-height: 100vh;
-  width: 375px;
-  color: hsl(234, 29%, 20%);
-  margin: 0;
-}
-
-.thank-you-page .details {
   background-color: hsl(0, 0%, 100%);
-  height: 100vh;
-  padding: 16px 22px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.thank-you-page .details div {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 7rem;
-}
-
-.thank-you-page .details img {
-  width: 50px;
-  margin-right: auto;
-}
-
-.thank-you-page .details p {
+  color: hsl(234, 29%, 20%);
+  min-height: 100vh;
   width: 100%;
-  margin-top: -1rem;
-}
-
-.thank-you-page .details p .email {
-  font-weight: bolder;
-}
-
-.thank-you-page .details a {
-  background-color: hsl(234, 29%, 20%);
-  color: hsl(0, 0%, 100%);
-  padding: 16px;
-  width: 90%;
-  margin-top: 11rem;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.content {
+  height: 80vh;
+  width: 375px;
+  padding: 3rem 16px 16px 16px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.content div img {
+  width: 72px;
+}
+
+.content div p .email {
+  font-weight: bolder;
+}
+
+.content .link-to-home {
+  margin-top: auto;
+  margin-right: 0;
+  margin-left: 0;
+  width: 95%;
+}
+
+.content a {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 7px;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  display: block;
+  width: 90%;
 }
 
 
 /* ------------ Footer Section ----------------------------- */
 footer {
-  background-color: hsl(0, 0%, 100%);
-  margin-top: 6rem;
-  padding: 24px;
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
 }
 
 footer .attribution {
   display: flex;
   justify-content: center;
+  padding: 24px;
   gap: 6px;
   flex-wrap: wrap;
   font-size: 12px;
@@ -220,17 +218,15 @@ footer .attribution {
 /* ----------------------- Media Query ------------------------------- */
 
 @media screen and (min-width: 800px) {
-  .main_section {
-    border-radius: 20px;
-  }
-
   .box {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     gap: 22px;
-    padding: 16px;
+    padding: 19px;
+    width: fit-content;
+    border-radius: 20px;
   }
 
   .box .mobile-img {
@@ -242,31 +238,43 @@ footer .attribution {
   }
 
   .thank-you-page {
-    width: 425px;
-    margin: 7rem auto;
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
   }
 
-  .thank-you-page .details {
-    border-radius: 20px;
+  .content {
     height: fit-content;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(234, 29%, 20%);
+    border-radius: 20px;
+    padding: 2.5rem 24px;
     align-items: center;
-    padding: 0 3rem;
+    display: block;
+  }
+
+  .content div img {
+    margin: 0 auto 0 2rem;
+  }
+
+  .content div h1 {
+    width: 82%;
+    margin: 1rem auto;
+  }
+
+  .content div p {
+    width: 80%;
+    margin: 0 auto 2rem auto;
+  }
+
+  .content a {
+    width: 70%;
+    display: block;
     margin: 0 auto;
   }
 
-  .thank-you-page .details div {
-    margin-top: 2rem;
-  }
-
-  .thank-you-page .details p {
-    width: 100%;
-  }
-
-  .thank-you-page .details a {
-    margin: 1rem auto 3rem auto;
-  }
-
-  .thank-you-page .details a:hover {
-    background-color: hsl(4, 100%, 67%)
+  footer .attribution {
+    font-size: 16px;
   }
 }
